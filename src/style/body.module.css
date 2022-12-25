@@ -34,11 +34,13 @@
 	height: auto;
 	color: #1d1f21;
 	flex: 1;
-	border: 1px solid #1d1f21;
+	/* border: 1px solid #1d1f21; */
+	box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.1) 0 2px 4px,
+		rgba(45, 35, 66, 0.1) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
 	/* height: 100%; */
 	border-radius: 1rem;
 	overflow: auto;
-	padding: 1rem;
+	padding: 1.5rem;
 }
 .leftCont label {
 	color: rgb(86, 86, 86);
@@ -109,11 +111,13 @@
 	color: #1d1f21;
 	height: auto;
 	flex: 1;
-	border: 1px solid #1d1f21;
+	/* border: 1px solid #1d1f21; */
+	box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.1) 0 2px 4px,
+		rgba(45, 35, 66, 0.1) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
 	/* height: 100%; */
 	border-radius: 1rem;
 	overflow: auto;
-	padding: 1rem;
+	padding: 1.5rem;
 }
 .rightCont hr {
 	border: 1px solid #80808060;
@@ -184,6 +188,15 @@
 .subBlock input[type='radio']:checked + label {
 	background-color: #edf4fe;
 	border: 1px solid #968ae4;
+}
+.waiting {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
 }
 
 @media (max-width: 900px) {

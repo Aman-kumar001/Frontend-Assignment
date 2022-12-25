@@ -9,7 +9,7 @@ const Right = ({ data, setData, setFormName, formName }) => {
 	return (
 		<div className={style.rightCont}>
 			<p className={style.rightHeading}>{formName}</p>
-			<hr />
+			{data.length > 0 && <hr />}
 			<form action=''>
 				{data.map((element, sort) => {
 					return (
@@ -55,6 +55,12 @@ const Right = ({ data, setData, setFormName, formName }) => {
 					</div>
 				)}
 			</form>
+			{data.length === 0 && (
+				<div className={style.waiting}>
+					Please enter Schema-UI {`(JSON Format strictly)`} in the form provided
+					on the other side.
+				</div>
+			)}
 		</div>
 	);
 };
